@@ -231,4 +231,146 @@ Tables in HTML:
         2. cellspacing  :used to apply space b/w cells in table 
         3. cellpadding : to apply space b/w cell border and content 
         4. align 
-        5. bgcolor 
+        5. bgcolor
+    Attributes in td/th:
+    ------------------
+    1. rowspan
+    2. colspan
+    3. align
+    4. bgcolor
+
+Forms in HTML:
+---------------
+       -> Forms are used to collect the information digitally
+
+       form tags:
+       ----------
+       1. <form></form>
+       2. <fieldset></fieldset> : design the border
+       3. <legend></legend> : label the form
+       4. <label></label> : label input fieldset
+       5. <input> : collect input from the users
+       6. <button></button> :display the buttons in Forms
+       7. <textarea></textarea> : its used to collect large data textarea (this is flexible input box)
+       8. <select></select> : is used to group the options(<option></option>)
+
+    Form Attributes:
+    ----------------
+       1. Action : it will accept the url as the value
+       2. Method : 
+
+    fieldset Attributes:
+    --------------------
+       1. style
+       2. class
+       3. id 
+
+    legend Attributes:
+    -------------------
+       1. for (used to link input field) 
+       2. style   
+       3. id
+       4. class
+       5. align
+    
+    label Attributes:
+    -------------------
+       1. for (used to link input field) 
+       2. style   
+       3. id
+       4. class
+      
+    input Attributes:
+    -------------------
+        1. type
+        2. id
+        3. name
+        4. min 
+        5. max
+        6. pattern
+        7. placeholder
+        8. minlength
+        9. maxlength
+        10. required
+        11. readonly
+        12. style
+        13. class
+    
+    button Attributes:
+    -------------------
+        1. type
+        2. id
+        3. class
+        4. style
+    
+    textarea Attributes:
+    ---------------------
+        1. id
+        2. class
+        3. required
+        4. placeholder
+        5. style
+
+    input type Attributes values:
+    -------------------------------
+        1. text 
+        2. email
+        3.password
+        4. date 
+        5. datetime
+        6.datetime-local
+        7. week
+        8.month
+        9. tel 
+        10. radio
+        11. checkbox
+        12. range
+        13. url
+        14. submit
+        15. image
+        16. cancel
+        17. file 
+        18. search 
+        19. reset 
+        20. number 
+    
+    media tags:
+    -------------
+        ->they are used to display audio,video,or to embed google maps, youtube videos,documents,webpages etc..
+
+        -> media tags like
+            1.audio
+                -><audio></audio> : used to display audios in webpages
+
+                audio tags Attributes:
+                ------------------------
+                    1. src
+                    2. controls
+                    3. muted
+                    4. loop
+                    5. autoplay
+
+            2. video
+                -><video></video> are used to display videos in webpages
+
+                video tag Attributes:
+                -----------------------
+                    1. src
+                    2. controls
+                    3.muted
+                    4.loop
+                    5.autoplay
+                    6. height
+                    7. width        
+            
+            3. iframe 
+                -><iframe></iframe> : tag are used ti embed google maps,yt videos, docs, website,webpages...
+
+                iframe Attributes:
+                -------------------
+                    1.src 
+                    2.frameborder
+                    3.height
+                    4.width
+
+
