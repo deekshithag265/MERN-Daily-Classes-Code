@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request Form</title>
+</head>
+<body>
+    <form action="">
+      <fieldset> 
+        <h2 align="center">Service Request Form</h2>   
+    
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <br><br>
+        <label for="contactno">Contact Number:</label>
+        <input type="text" id="contactno" name="contactno" required placeholder="Enter your contact number">
+        <br><br>
+        <label for="issue">Issue Type:</label>
+        <select id="issue" name="issue">
+            <option value="choose your option">Choose your option</option>
+            <option value="internet">Internet Connectivity</option>
+            <option value="hardware">Hardware Issue</option>
+            <option value="software">Software Issue</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        <label for="idescription">Issue Description:</label>
+        <textarea id="idescription" name="idescription" required placeholder="Please provide a detailed description of the issue..."></textarea>
+        <br><br>
+        <label for="priority">Priority:</label>
+        <input type="radio" id="low" name="priority" value="low">
+        <label for="low">Low</label>
+        <input type="radio" id="medium" name="priority" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="high" name="priority" value="high">
+        <label for="high">High</label>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
