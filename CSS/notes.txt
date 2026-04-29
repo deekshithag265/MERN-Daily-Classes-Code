@@ -1,54 +1,226 @@
-lCSS: 
-------
-    ->CSS stands for cascading style sheet used to apply stylings , layouts, animations to the web page 
-    ->CSS are introduced in the year 1994 by the developer "hakon wium lie" 
-    ->the present version of CSS is CSS3 
+css
+-----------
+->css stands for cascading style sheet used to apply stylings , layouts , animinations to the web page 
+->css are introduced in the year 1994 by the developer "hakon wiumlie"
+->the present version of css in css3
 
-Methods to apply stylings to web page : 
+
+methods to apply stylings to web page :
+------------------------------
+1.inline css/ inline css
+->applying styling by taking 'style attribute' in HTML
+->the styling is applicable for only that element 
+->for inline css not required css selectors 
+-> we can take the same key two times 
+ex:background-color twice it will take the last one which we have taken at last not the first one 
+->inline stylings is more priority then internal & external css 
+
+2.internal css/ internal stylings
+->applying stylings by taking <style> </style> tag in head part 
+->to apply internal css we need css selectors 
+
+3.external css / external stylings
+->apply styling by taking by new.css file and link html file by using <link> tag
+->to apply external css we need css selectors
+
+css selectors:
+-> css selectors are used to target html elements to apply stylings
+->css selectors are present anly in internal and external css 
+
+types of css selectors:
+----------------- 
+1.simple selectors 
+    a.id selector(#)
+    b.class selector(.)
+    c.tag selector
+    d.grouping selector(,)
+    e.universal selector(*)
+
+2.combinator selectors
+---------------------------------
+a.descendent selector (space)
+b.child selector (>)
+c.adjacent slibling selector(+)
+d.general slibling selector (~)
+
+3.pseudo class selectors
+-----------------------------------
+a.structural pseudo class selector 
+types:
+1.:first-child
+2.:last-child
+3.:first-of-type
+4.:last-of-type
+5.:nth-child()
+
+
+2.dynamic psuedo class selectors
+----------------------------
+1. :active
+2. :visited
+->anchor tag
+3.:focus
+->input tag
+4.:hover
+
+
+4.pseudo elements selectors 
+----------------------------
+1.::after
+2.::before
+3.::first-letter
+4.::fiest-line
+5.::marker ->only we can use in list tag only 
+6.::selector
+7.::place holder 
+
+
+5.attribute selectors 
+--------------------------
+->attributes selector are used to target html elements based on attributes 
+ex:<h1 align="center" id="heading">  hello </h1>
+   <h1 id="heading">  hello </h1> 
+
+  syntax: selector[attributesName="value]{
+    ...............styling................
+  }
+
+  types:
+  -----------------------
+  1.[attributesName="value]
+  2.[attributesName^="value]
+  3.[attributesName$="value]
+  4.[attributesName-="value]
+  5.[attributesName*="value]
+
+  color values:
+  -------------------------
+  1.color name 
+  2.rgb() -> range was 0 to 255
+  3.rgba(red,green,blue,alpha)
+  4.hsl(hue, saturation,lightness)
+  5.hsl(hue, saturation,lightness)
+  6.hexa code  -> 0 to 360
+  7.transparent 
+  8.color()
+
+  text properties :
+  ----------------------------------
+  ->text properties are used to apply stylings for only 'text' properties like:
+  ----------------------------------
+  1.text-alignment 
+   a.text-align: left,right,start,end,justify
+   b.word-spacing 
+   c.letter-spacing 
+   d.text-indent 
+   e.line-height
+
+2.text decoration properties
+   a.text-decoration-line :none,underline,overline,line-through
+   b.text-decoration-color
+   c.text-decoration-thichness
+   d.text-decoration (short hand form)
+   e.text-decoration-style: dashed,dotted,wavy,none
+
+3.text transform properties:
+   a.text-transform: lowercase, uppercase, captilalized
+
+4.text-overflow properties:
+  a.overflow : visible,auto,hidden,scroll
+  b.overflow-x
+  c.overflow-y
+
+5.font properties
+  a.font-size
+  b.font-weight
+  c.font-style
+  d.font-family
+
+  css box model:
+  --------------------------
+    1.padding
+    ->the space b/w content and border
+    padding properties:
+    ========================
+    a.padding-top
+    b.padding-bottom
+    c.padding-left
+    d.padding-right
+    e.padding (short hand form)
+
+    2.border
+    ->the space b/w padding and margin
+    border properties:
+    ========================
+    a.border-style
+    b.border-width
+    c.border-color
+    d.border (short hand form)
+    e.bordertop
+    f.border-left
+    g.border-right
+    h.border-bottom
+
+   border radius properties:
+   1.border-top-left-radius
+   2.border-top-right-radius
+   3.border-bottom-left-radius
+   4.border-bottom-right-radius
+   5.border-radius-shf   
+
+
+    3.margin
+    ====================================
+    1.margin-top
+    2.margin-bottom
+    3.margin-left
+    4.margin-right
+    5.margin(short hand form)
+
+
+flex properties:
+1.display:flex;
+2.flex-direction
+3.flx-warp
+4.justify-content
+5.aligin-items
+6.flex-grow
+7.flex-shrink
+8.flex
+
+
+grid properties:
+-------------------------
+1.display:grid
+2.grid-template-columns
+3.grid-template-rows
+4.row-gap
+5.column-gap
+6.grid-row-start
+7.grid-row-end
+8.grid-column-start
+9.grid-column-end
+
+
+position properties:
 -----------------------------------------
-    1. Inline CSS/ inline Stylings 
-        ->applying styling by taking 'style attribute' in HTML Element 
-        ->this styling is applicable for only that Element 
-        ->for inline CSS not required CSS Selectors 
-        ->inline styling is more priority then Internal & External CSS 
+position:relative, absolute, fixed,stricky
+left
+right
+top
+bottom
 
-    2. Internal CSS/ Internal Stylings 
-        ->applying stylings by taking <style></style> tag in head part is called as a Internal CSS/ Internal Stylings 
-        ->to apply Internal CSS we need CSS Selectors 
+animinations:
+    1.define animination using @keyframes
+    2.link
 
+media queries:
+----------------------------------
+media queries are used to build reponsive web page based on device width(device view port)
+   -> break points
+   1.smaller devices (mobile with brands) 0px-450px
+   2.media devices (tables/ipad) 450px - 850px
+   3.large devices (laptops ) 850px-1200px
+   4.X-large devices(digital screen) >1200px
 
-
-    3. External CSS/ External Stylings 
-        ->apply styling by taking new .css file and link to html file by using <link></link> tag 
-        ->to apply External CSS we need CSS Selectors 
-
-
-
-CSS Selectors : 
-----------------
-    ->CSS Selectors are used to target HTML Elements to apply stylings 
-    ->CSS Selectors are present only in Internal & External CSS
-    
-    Types of CSS Selectors: 
-    -----------------------
-         1.simple selectors:
-                ID selectors(#),
-                Class selector(.),
-                Tag selector,
-                Grouping selectors(,),Universal selectors(*)
-        2.combinator selectors:
-            descendent(space), child(>), adjacent sibling(+),general sibling(~)
-        3.pseudo class selectors:
-            structural pseudo class selectors:
-                :first-child
-                :last-child
-                :first-of-Types
-                :last-of-type 
-                :nth-child()
-            Dynamic pseudo class selector:
-                : active --
-                :visited --anchor
-                :focus --input
-                :hover
-        4.pseudo elements selectors
-        5.attribute selectors
+@media screen min-width & max-width
