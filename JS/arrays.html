@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[10,20,30,40,50];
+    let arr1=['java',null,50,20.5,true];
+    
+    console.log(arr1);
+    console.table(arr);
+    //new keyword
+    let arr2=new Array(10,20,30,40)
+    console.table(arr2);
+
+    console.log(arr[6]);
+    
+    //inbuilt methods/fun
+    let sampleArr=[10,20,30,40,50,60];
+    console.log(sampleArr);
+    sampleArr.pop(30);
+    console.log(sampleArr);
+    sampleArr.unshift(40,50,30); //multiples values can be added to the starting of the array
+    console.log(sampleArr);
+    sampleArr.shift();
+    sampleArr.shift();
+    sampleArr.shift();sampleArr.shift();
+
+    console.log(sampleArr);
+    sampleArr.push(60,70,80);
+    console.log(sampleArr);
+    
+    //console.log(sampleArr.splice(1,4)); //printing
+
+    sampleArr.splice(1,4,30); //used to fetch from an index to idex:splice
+    console.log(sampleArr.toString());
+
+    let str1= "Javascript is scripting language"
+    console.log(str1);
+    console.log(str1.split(" ").reverse().toString().replaceAll(","," "));
+    console.log(str1.split('').reverse().toString().replaceAll(",",""));
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

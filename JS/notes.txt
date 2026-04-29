@@ -1,0 +1,139 @@
+JAVA SCRIPT:
+-------------
+JS is a scripting language as well as programming language
+
+WHY WE NEED JS:
+----------------
+    ->To fetch data from server(API) and also send data to server JS is required
+    ->To achieve DOM (Document Object Model) fuctionalities
+    ->to manipulate HTML and CSS
+    ->To develop dynamic web applications
+
+Differences between JAVA and JS:
+-------------------------------------
+JAVA                                                                                    JS
+--------------------------------------------------------------------------------------------------------------------------------
+->its object oriented programming language                                         ->its both scripting and OOP language
+->both complier and   interperter                                                  -> only interperter
+->supports multi-threading                                                          ->single call stack
+
+Tokens
+------
+    ->Tokens are the smallest unites/elements in the js programs
+
+    Classifications:
+    ----------------
+    1.Identifier:
+    ------------------
+        they are the names gives to the JS CODE
+        ex: variables name,class names,function names
+        In the place of Identifers  we cant use keywords
+    2.Literals:
+    ------------
+        ->values gives to the JS code
+        types:
+        --------
+            1.string 
+            2. numeric 
+
+    3.Keywords:
+    ------------
+        ->pre-defined words which has its own meaning
+        ->in JS there are 66 keywords
+        ex: char, int, fuction, float,boolean, class, const, var, let, if, else, for, while, do, switch,
+         continue, break, default, double, return, export, exports, finally, try, catch, super, this, throw,
+          new, package, public, static, void, null, import get,set, abstract, assert, byte, constant, enum, 
+          extends, delete,implements, interface,etc...
+    4.Seperators:
+    --------------
+        ->to seperate the given code
+        ex:[],{},(),;,:,"",'',``,,,.,<>
+    5.Operators:
+    -------------
+        ->used to perform operations on operands
+        types:
+        --------
+            1. Assignment(=,-=,+=,*=,/=,%=)
+            2.logical(&&,||,!)
+            3.relational(>,<=,<,<=)
+            4.bitwise(&,|,^)
+            5.Arthematic(+,-,*,/,%,**)
+            6.unary(++,--)
+            7.ternary/conditional(condition ? exp1:exp2)
+            8.shift(>>,<<)
+            9.comparison(==,===,!=) //== checks only values not data types due to internal typecasting// //=== checks both data type and value//
+
+    
+    6.Comments:
+    ------------
+        ->comment the given code
+        type:
+            1.single line(//)
+            2.multi-line (/* */)
+
+Datatypes:
+-----------
+    ->used to represent the what type of data we are storing on variables
+    types:
+    -------
+        1.Primitive Datatypes(immutable):
+            number, string,boolean,undefined,null, bigInt, symbol
+        2.Non-Primitive Datatypes(mutable)
+            arrays, objects, functions, class types
+
+variables:
+------------
+    ->name and memory location used to store data or values and it can change N number of times during the execution
+
+    1. variable declaration (defining variable):
+        ex: let a=10; let a=20;
+    2.variable initialization :
+        ex: a=10;
+    3. variable utilization 
+    4. variable re-initialization
+    5. variable re-declaration
+
+In JS we can define variable in 3 ways:
+
+    1. let:
+        ->acts as local scope/ block scope
+        ->declaration and initialization in the same/different line is possible
+        ->re-initialization is possible but re-declaration is not possible
+        ->we can't hosit the let variable
+            hositing:
+            -----------
+             ->utilizating the variables before declaration
+             -> only possible throught 'var' variable
+     2.var
+           ->let variables acts like a global scop/block scop (because var present in windows object)
+           ->variable declaration and initialization in  same/different line is possible
+           ->re-initialization and re-declaration is possible
+           ->we can hoist the var variables
+    3.const
+           ->const variables acts like like a final (because once initialization values we cant modify data/values)
+           ->variable declaration and initialization in  same is possible but different lines is not possible
+           ->re-initialization and re-declaration is not possible
+           ->we cant hoist the const variable
+String:
+-------
+    they are nothing but a group of characters
+    declaration: "",''.``(template string & string interpretation)
+
+    string inbuilt functions:
+    ---------------------------
+        
+
+Arrays:
+---------
+    ->they are linear datastructures are of either homogenous or heterogenous types of data
+    ->Arrays size is dynamic in nature
+    types:
+    ------
+        1. literal ways
+        2.using new keyword(Arrays object)
+
+Functions/methods:
+------------------
+    ->its a block of statement which will execute whenever we call or invoke
+
+    JS fuction types:
