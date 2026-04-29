@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h2 align="center">Survey Form</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
+            <br><br>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="Please provide your feedback..." required></textarea>
+
+            <br><br>  
+            <label for="rating">Rating(1-5):</label>
+            <input type="radio" id="1" name="rating" value="1">
+            <label for="1">1</label>
+            <input type="radio" id="2" name="rating" value="2">
+            <label for="2">2</label>
+            <input type="radio" id="3" name="rating" value="3">
+            <label for="3">3</label>
+            <input type="radio" id="4" name="rating" value="4">
+            <label for="4">4</label>
+            <input type="radio" id="5" name="rating" value="5">
+            <label for="5">5</label>
+            
+            <br><br>
+
+            <label for="ftech">Favorite Technology:</label>
+            <select id="ftech" name="ftech">
+                <option value="choose your option">Choose your option</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+
+            <br><br>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

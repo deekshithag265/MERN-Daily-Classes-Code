@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        form{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            width: 400px;
+            margin: auto;
+            background-image: url("https://img.freepik.com/free-vector/gradient-technology-background_23-2148889717.jpg?w=2000");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        fieldset{
+            border:none;
+            backdrop-filter: blur(50px);
+            margin:110px;
+            padding: 30px;
+            border-radius:10px 50px;
+            box-shadow: 0px 0px 0px white;
+        }
+        label{
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            margin-right: 20px;
+        }
+        button{
+            padding:10px 30px;
+            background-color: antiquewhite;
+            font-weight: bold;
+            font-style: italic;
+            font-family: monospace;
+            border-radius: 8px;
+
+        }
+        h1{
+            text-align: center;
+            color: transparent;
+            background-image: linear-gradient(pink);
+            background-clip: text;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <h1 align="center">Job Application Form</h1>
+            <label for = "fname"> First Name:</label>
+            <input type = "text" id="fname" maxlength="8" minlength="3" required placeholder="Enter your First Name">
+            <br><br>
+            <label for = "lname"> Last Name:</label>
+            <input type = "text" id="lname" maxlength="5" minlength="3" placeholder="Enter your Last Name"> 
+             <br> <br>
+            <label for ="email">Email:</label>
+            <input type="email" id="email" required placeholder =" Enter your Email ID">
+            <button type="submit">Submit</button>
+
+            <br><br>
+
+            <label for="phno">Phone Number:</label>
+            <input type="tel" pattern="[6-9]{1}[0-9]{9}" maxlength="10" required id ="phno" placeholder="+91">
+
+            <br><br>
+
+            <label for="date">Date of Birth:</label>
+            <input type ="date" id ="dob" required>
+
+             <br><br>
+             <label for="state">State:</label>
+             <select name="state" id="State">
+                <option value="choose">Choose a state</option>
+                <option value="AP">AP</option>
+                <option value="WB">WB</option>
+                <option value="TN">TN</option>
+                <option value="KA">KA</option>
+                <option value="MH">MH</option>
+             </select>
+            <br><br>
+            <label for="address">Address:</label>
+            <textarea name="" rows="3" cols="30" id="address" placeholder="Enter full address
+            "></textarea>
+            <br><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="Gender" value="Other">
+            <label for="other"> Other</label>
+
+            <br><br>
+
+            <label for="skills">Skills:</label>
+            <input type="checkbox" id="Nodejs" name="skills" value="Node js">
+            <label for="Nodejs">Node.js</label>
+            <input type="checkbox" id="Git" name="skills" value="Git">
+            <label for="Git">Git</label>
+            <input type="checkbox" id="ExpressJs" name="skills" value="ExpressJs">
+            <label for="ExpressJs">Express.js</label>
+            <input type="checkbox" id="MongoDB" name="skills" value="MongoDB">
+            <label for="MongoDB">MongoDB</label>
+
+            <br><br>
+
+            <input type="text" placeholder="Other skills">
+            <br>
+            <br>
+
+            <label for="languages">Languages:</label>
+            <input type="range"> Telugu
+            <input type="range">Hindi
+            <input type="range">English
+            <input type="text" placeholder="Other Languages">
+            <br><br>
+
+            <label for="resume">Resume:</label>
+            <input type="file" accept=".pdf" id="resume">
+             <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
