@@ -135,5 +135,56 @@ Arrays:
 Functions/methods:
 ------------------
     ->its a block of statement which will execute whenever we call or invoke
+    ->using functions we can increse code readability and code reuseability
+    
+     basically we have to types of functions:
+ 1.user defined functions:
+     ->Any functions that is declared by user and programmer as per there requirements
 
+ 2.predefined function:
+    -> it means inbuilt functions
+    
     JS fuction types:
+    -----------------
+ 
+    1.anonyms function
+    2.normal function/named function
+    3.functional expression
+    4. immediate invoke function/self calling function
+    5.arrow function(ES 6)
+    6.Nested function
+    7.Higher order function
+    8.callback function
+    9,generator function
+
+Objects:
+--------
+->they are nothing but real entities used to store data in the form of key and value pair
+
+    1.literal ways
+    2.using keyword (create for object classes)
+
+Bom:(Browser Object Model)
+--------------------------
+windows:
+    ->it contains windows 
+    ->methods like console are present in Browser
+    ->method like prompt alert console(log,error,warn,info,table......),session storage, fetch, local storage
+    https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=DOM%20IN%20JAVASCRIPT.drawio&dark=1#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1wX_N7YJu17-dNlZGfupcKyvlNTD-s39u%26export%3Ddownload#%7B%22pageId%22%3A%22w0W7gVwtxNn_7I0n7kZZ%22%7D
+
+
+DOM(Document object Methods)
+->they are used tto manipulate html and css 
+->to build dynamic web pages
+
+DOM events:
+-----------
+->it can be executed in three ways
+    1.Attribute way 
+    2.property way
+    3.Addevent listeners
+
+    (tbody(tr>td*5)*3)
+    
+
+

@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            name:"Omika Dadi",
+            rollnumber :'123234',
+            skills:["node js","express js","react js"],
+            address:{
+                city:"Vizag",
+            state:"AP",
+            country:"India"
+        }
+        }
+        console.log(obj);
+        console.log(obj.name);
+        console.log(obj.skills);
+        console.log(obj.address);
+        console.log(obj.address.city);
+        console.log(obj.skills[0]);
+    
+        console.log(Object.keys(obj));
+        console.log(Object.values(obj));
+        console.log(Object.entries(obj));
+        
+        obj.name="Manoj Dadi";
+        console.log(obj);
+        obj.skills.push("angular js");
+        console.log(obj);
+        delete obj.address;
+        console.log(obj);
+        
+        Object.seal(obj);
+        console.log(Object.isSealed(obj));
+
+        delete obj.rollnumber;
+        obj.rollnumber="321456";
+        obj.age=30;
+        console.log(obj);
+
+        Object.freeze(obj);
+        console.log(Object.isFrozen(obj));
+        obj.rollnumber="654321";
+        console.log(obj);
+
+        // const obj1=new Object({
+        //     name:"Manoj Dadi",
+        //     rollnumber :'123456',
+        // })
+        
+        // console.log(obj1);
+
+        window.console.log();
+        console.log("This is console log");
+
+
+
+
+    </script>
+</body>
+</html>

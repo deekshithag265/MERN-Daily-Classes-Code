@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <input type="search" id="searchInput" placeholder="search employees...">
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+           <tr bgcolor="#23cc23">
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th>Address</th>
+            <th>Phone No</th>
+           </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <td>hyma</td>
+            <td>hr</td>
+            <td>1cr</td>
+            <td>vizag</td>
+            <td>1234567890</td>
+           </tr>
+           <tr>
+            <td>hema</td>
+            <td>manager</td>
+            <td>2cr</td>
+            <td>hyderabad</td>
+            <td>0987654321</td>
+           </tr>
+           <tr>
+            <td>john</td>
+            <td>developer</td>
+            <td>3lpa</td>
+            <td>bangalore</td>
+            <td>1122334455</td>
+           </tr>
+
+            <tr>
+            <td>john</td>
+            <td>developer</td>
+            <td>3lpa</td>
+            <td>bangalore</td>
+            <td>1122334455</td>
+           </tr>
+
+            <tr>
+            <td>john</td>
+            <td>developer</td>
+            <td>3lpa</td>
+            <td>bangalore</td>
+            <td>1122334455</td>
+           </tr>
+        </tbody>
+        </thead>
+    </table>
+    <script>
+        document.querySelector("tbody tr")
+        console.log(document.querySelector("tbody tr"));
+    </script>
+</body>
+</html>
