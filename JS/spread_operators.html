@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=[10,20,30,40,50];
+        let arr2=[50,null, {name:'hari',role:'hr'},()=>{console.log('hello')}]
+
+        let arr3=[...arr1,...arr2, "html","css",true];
+        console.log(arr3)
+
+        let [a,b,c,d,e]=arr1;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        console.log(e);
+
+
+        let [g,h,i,j]=arr2
+        console.log(g);
+        console.log(h);
+        console.log(i);
+        console.log(j);
+        j();
+
+        //spread operators in  objects
+
+        let User={
+            name:"mahi",
+            phone:"9876543210"
+
+        }
+
+        let orderDetails={
+            productName:"mobile",
+            price:50000,
+            status:"done",
+
+        }
+
+        let orderHistory ={...User,...orderDetails};
+        console.log(orderHistory);
+       
+        let studentDetails=[
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+        {name:"pooji", rollno:"HU2025", marks:{CNN:50,CPP:60,DNS:90,ADE:70}}, 
+    ]
+
+    console.log(studentDetails)
+    
+    </script>
+</body>
+</html>

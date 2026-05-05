@@ -186,5 +186,43 @@ DOM events:
 
     (tbody(tr>td*5)*3)
     
+LOOOPs:
+-------
+->they are used to iterate  the statements no of times until conditions become satisfied
+types:
+------
+1.for LOOOP: used when we know range
+    syntax: 
+        for (initialization;condition;increment/decrement){
 
+        }
+
+2.while LOOOP:
+    syntax:
+        while(condition){
+            increment/decrement
+        }
+3.do while loop:
+    syntax:
+        do{
+            increment/decrement;
+        }
+        while(condition)
+4.for-in loop: is used to iterate strings,arrays and fetch only index values
+    syntax:
+    for(variable in string/array)
+
+               
+5.for-of loop:is used to iterate strings,arrays and fetch only values
+    syntax:
+    for(variable in string/array)
+
+6.for-each loop: used for arrays , is a higher order function used to iterate function
+    syntax:
+        Array.forEach((value,index,array)=>{
+
+        })
+
+Array inbuilt method:
+=====================
 
