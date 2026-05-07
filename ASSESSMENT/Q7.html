@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Array Data Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 500px;
+      margin: 10;
+    }
+    div{
+        text-align: center;
+        background-color: antiquewhite;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    li{
+        font-size: 18px;
+        margin: 5px 5px;
+        align-items: center;
+        }
+  </style>
+</head>
+<body>
+
+   <div>
+    <h2>Student Names</h2>
+    <ul id="studentList"></ul>
+   </div>
+    
+ 
+
+  <script>
+    const students = ["Alice", "Bob", "Charlie"];
+    const ul = document.getElementById("studentList");
+
+    students.forEach((name, index) => {
+      const li = document.createElement("li");
+      li.textContent = `${index + 1}. ${name}`;
+      ul.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>

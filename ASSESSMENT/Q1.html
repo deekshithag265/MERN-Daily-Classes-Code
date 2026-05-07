@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            background-color: lightgray;
+        }
+        th {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>CN</th>
+            <th>DSA</th>
+            <th>OS</th>
+            <th>Total</th>
+            <th>Percentage</th>
+            <script>
+                let students = [
+                    { name: "Alice", cn: 85, dsa: 90, os: 80 },
+                    { name: "Bob", cn: 78, dsa: 82, os: 88 },
+                    { name: "Charlie", cn: 92, dsa: 88, os: 95 }  
+                ]; 
+                function Total(student) {
+                    const total = student.cn + student.dsa + student.os;
+                    return total;
+                    
+                } 
+                function Percentage(student) {
+                    const total = Total(student);
+                    const percentage = (total / 300) * 100; 
+                    return percentage;
+                }
+                students.forEach(student => {
+                    const total = Total(student);
+                    const percentage = Percentage(student);
+                    document.write(`
+                        <tr>
+                            <td>${student.name}</td>
+                            <td>${student.cn}</td>
+                            <td>${student.dsa}</td>
+                            <td>${student.os}</td>
+                            <td>${total}</td>
+                            <td>${percentage.toFixed(2)}%</td>
+                        </tr>
+                    `);
+                });
+
+            </script>
+        </tr>
+    </table>
+</body>
+</html>
