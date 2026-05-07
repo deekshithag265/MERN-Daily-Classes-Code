@@ -1,0 +1,16 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: aqua;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-image: linear-gradient(red, orange);
+    
+}

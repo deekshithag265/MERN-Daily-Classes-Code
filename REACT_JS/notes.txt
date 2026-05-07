@@ -1,0 +1,7 @@
+npx: note package executable
+npm: node package manager-> legacy model
+JS libraries:
+--------------
+    J Query
+    React JS
+    Animus JS

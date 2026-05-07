@@ -1,0 +1,119 @@
+React js:
+--------
+  ->React js is the js library
+
+  Features:
+  ->React js is component Based
+  ->It supports virtual DOMUsing react js we can build(SPA) single page of application
+  ->react js will follow defining algorithm
+Library:
+---------
+ ->collection of code is called as library
+ ->Ex;react js , jquery,anime js ..etc
+ 
+FrameWork:
+ ----------
+ ->collection of Libraries is calles frame work
+ ex:Angular js, next js ,next js,Express js,Electron js,Vue js
+
+
+JSX(javascript and XML[extendable markup language]):
+ ----------------------------------------------------
+   ->React will understand JSX code but browser will not understand JSX
+   it understand only JS code (because every browsers having JS engin's)
+   ->To convert JSX code to JS(javascript) we have next-generation compiler called "babel Js"
+
+   ->JSX is similar to HTML , here it allow both JS and HTML code
+
+   Rules:
+       ->JSX filename is always starts with capital letters
+       ->here we can achive javascript expression ->{}
+       ->In return function HTML elements contains parentTag
+       ->JSx will allow empty fragments (<> </>)
+
+
+Components In React:
+ --------------------
+   -->Components are the smallest UI blocks
+  // -->react js is introduced by 2010
+
+  Types:
+  -------
+   1.Class based components
+     ->components are declared using class keyword is called as class based components
+     ->In CBC constructors , super keyword , this keyword is present also render() ,and life cycle methods are present
+     -> In CBC states are present so that's why is called as a stateFull components
+     Syntax:
+        import {component} from react;
+        class ClassName extends Component{
+            render(){
+                return(
+                    html code
+                )
+            }
+        }
+        export default ClassName
+     
+   2.Function based components(FBC)     (16.8->hooks)
+    ->we can declared FBC using arrow function or normal function or functional expression
+    ->In FBC constructors , super keyword , this keyword not present 
+    ->render() and life cycle methods also not present
+    ->In FBC state are not presentso thats why is also called as stateless component
+
+    syntax_1: Arrow Function
+
+        const ComponentName=()=>{
+            return(
+                html code here..
+            )
+        }
+        export default ComponentName;
+    
+    Syntax_2:
+
+        function ComponentName(){
+            return(
+                html code here..
+            )
+        }
+        export default ComponentName;
+    
+    Syntax_3:
+
+        const ComponentName=function(){
+            return(
+                html code here..
+            )
+        }
+        export default ComponentName;
+
+States In React:
+----------------
+    ->states are used to hold the data
+    ->States are mutable in nature
+    ->States are present only in CBC
+
+hooks:
+------
+    ->hooks are used to make FBC statefull 
+    ->they are used only in FBC
+    ->hooks are introduced in 16.8 react ver
+    ex:
+        1.useState()
+        2.useEffect()
+        3.useNavigate()
+        4.useMemo()
+        5.useContext()
+        6.useReduce()
+        7.useRef()...etc
+
+States in FBC:
+--------------
+    ->we can declare state in FBC using useState() hook
+
+Props(properties):
+------------------
+    ->props are used to transfer data from one component to another component
+    ->props are immutable in nature
+    ->present in both function based and class based
+    
