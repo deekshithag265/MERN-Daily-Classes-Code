@@ -1,0 +1,28 @@
+Node Js:
+---------
+
+        ->node Jsis the run time server side JS runtime environment
+        ->Using Node Js we can build server(http core model)
+
+run Js file:
+    command->node fileName
+
+user Defined modules:
+---------------------
+    ->any function Defined by user
+    ->export Modules from one file to another file
+        syntax:module.export=moudleName
+            module.exports={moudleName1,...}
+    
+    ->import exported modules  
+        syntax: const moudleName {moudleName1,..}
+
+    node core inbuilt modules(core modules):
+    ----------------------------------------
+        node.js core modules:
+            fs:it allows reading writing,updating,deleting files
+                readFile(),writeFile(),appendFile(),unlink()
+            path: helps in working with file path
+                join,resolve,extname,basename
+            OS 
+            http:used to create HTTP servers.it can create a server without Express.js
