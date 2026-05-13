@@ -25,7 +25,7 @@ export default function Login() {
 <div id="login-container">
       
       <form onSubmit={handleSubmit}>                     
-        <div>
+        <div className="my-2">
           <label>Email:</label>
           <input
             type="email"
@@ -35,7 +35,7 @@ export default function Login() {
             required
           />
         </div>
-        <div>
+        <div className="my-2">
           <label>Password:</label>
           <input
             type="password"
@@ -47,6 +47,7 @@ export default function Login() {
         </div>
         <button type="submit">Login</button>
       </form>
-    </div>    </>
+    </div>    
+    </>
   );
 }
