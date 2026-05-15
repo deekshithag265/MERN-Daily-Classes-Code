@@ -1,0 +1,96 @@
+let studentDetails = [];
+let collegeDetails=[];
+
+app.use(express.json());
+
+// Add single student
+app.post("/add-student", (req, res) => {
+
+    const newStudent = {
+        stdname: req.body.name,
+        stdrollno: req.body.rollno,
+        stdbranch: req.body.branch,
+        stdskills: req.body.skills,
+    };
+
+    studentDetails.push(newStudent);
+
+    res.status(200).json({
+        message: "student added successfully",
+        newStudent
+    });
+});
+
+// Add multiple students
+app.post("/add-multiplestudents", (req, res) => {
+
+    const allNewStudents = req.body.allStudents;
+
+    studentDetails.push(...allNewStudents);
+
+    res.status(200).json({
+        message: "all students added successfully"
+    });
+});
+
+// Get all students
+app.get("/get-students", (req, res) => {
+
+    res.status(200).json({
+        students: studentDetails
+    });
+
+});
+
+// Add college
+app.post("/add-college", (req, res) => {
+
+    const newCollege = {
+        collegename: req.body.name,
+        collegecode: req.body.code,
+        collegecity: req.body.city,
+        collegebranches: req.body.branches
+    };
+
+    collegeDetails.push(newCollege);
+
+    res.status(200).json({
+        message: "college added successfully",
+        newCollege
+    });
+
+});
+
+// Get all college details
+app.get("/get-colleges", (req, res) => {
+
+    res.status(200).json({
+        colleges: collegeDetails
+    });
+
+});
+
+// Add multiple colleges
+app.post("/add-multiple-colleges", (req, res) => {
+    const allNewColleges = req.body.allColleges; // key is "allColleges"
+    collegeDetails.push(...allNewColleges);
+    res.status(200).json({ message: "All colleges added successfully" });
+});
+
+app.delete("/deleted-student/:rollNumber", (req, res) => {
+    const paramsRollNumber = req.params.rollNumber;
+    const afterDeleted = studentDetails.filter(student => student.stdrollno != paramsRollNumber);
+    studentDetails = afterDeleted;
+    res.status(200).json({ message: "student deleted successfully", students: studentDetails });
+});
+
+const express = require("express");
+const app = express();
+const PORT = 4000;
+const connection=require("./config/db")
+
+connection()
+
+app.listen(PORT, () => {
+    console.log(`server running on port ${PORT}`);
+});
